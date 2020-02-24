@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GIW"
+             x:Class="GIW.MainPage"
+             BackgroundColor="#369">
+    
+    <ScrollView> <!--All font size/colors/etc. set at the app level in App Resources. -->
+        <StackLayout Margin="10, 20, 10, 10" Padding="5, 5, 5, 5" BackgroundColor="#369">
+            <Image Source="KSB.jpg"></Image>
+            <!-- Image needs scaled down.-->
+            <Label Text="Welcome to the Georgia Iron Works Booth!" 
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+            <!--Fixed squished problem with margin adjustment. -->
+            <Label Text="We are GIW Industries, Inc., a KSB production facility located in Grovetown, Georgia, USA.  We provide process and non-process pumps and systems to the mining market, and all of our slurry products have been relabeled under the umbrella of GIW® Minerals. This means that you are in good hands, with well over a century's worth of experience in pumps and hydrotransport." HorizontalOptions="CenterAndExpand" VerticalOptions="Center"
+                />
+            <Label Text="View our catalog here:" HorizontalOptions="Center" VerticalOptions="Center"  />
+            <Label Text="https://products.ksb.com/global/" HorizontalOptions="Center" VerticalOptions="Center" />
+            <!--Hyperlink still not working. -->
+            <!--Add blog here?  Or second page...-->
+            <Button Text="Sign Up For More Info!" Clicked="Button_Clicked" Padding="5, 5, 5, 10" />
+            <!--Button cut off; likely needs padding/margin fix. -->
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

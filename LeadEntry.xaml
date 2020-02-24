@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GIW.LeadEntry" 
+             BackgroundColor="#369" >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10, 10, 10, 10" Margin="5, 5, 5, 5">
+                <Label Text="Enter your contact information here:"
+                    VerticalOptions="Center" HorizontalOptions="CenterAndExpand" 
+                    FontSize="Large" Margin="0, 5, 0, 5" ></Label>
+                <Label Text="First Name:" ></Label>
+                <Entry Placeholder="Your First Name"></Entry>
+                <Label Text="Last Name:" ></Label>
+                <Entry Placeholder="Your Last Name"></Entry>
+                <Label Text="Company Name:" ></Label>
+                <Entry Placeholder="Company Name" ></Entry>
+                <Label Text="Email Address:" ></Label>
+                <Entry Placeholder="Your Email Address"></Entry>
+                <Label Text="Phone Number:" ></Label>
+                <Entry Placeholder="Your Phone Number"></Entry>
+                <!--Need to do a check box to sign up for blog.-->
+                <Button Text="Submit" Padding="5, 5, 5, 5"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
